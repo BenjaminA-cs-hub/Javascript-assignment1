@@ -32,7 +32,7 @@ function myPush(arr, item) {
   return arr; 
 }
 console.log("myPush() function test: ")
-console.log("Adding tank to " + testArray);
+console.log("Adding tank to ", testArray);
 console.log(myPush(testArray, "tank"));
 
 // 9
@@ -47,7 +47,7 @@ function myLastIndexOf(arr, target) {
 
 const numArray = [1,2,3,4,10,12];
 console.log("myLastIndexOf() function test: ")
-console.log("Finding index of 10 in " + numArray);
+console.log("Finding index of 10 in ", numArray);
 console.log(myLastIndexOf(numArray, 10));
 
 // 10
@@ -71,5 +71,19 @@ Object.grabKeys = function(object) {
 }
 
 console.log("grabKeys() function test: ")
-console.log("Grabing keys of " + student);
+console.log("Grabing keys of ", student);
 console.log(Object.grabKeys(student));
+
+Object.grabValues = function(object) {
+    const values = [];
+    let i = 0;
+    for (value in object) {
+        values[i] = object[value];
+        i++;
+    }
+    return values;
+}
+
+console.log("grabValues() function test: ")
+console.log("Grabing values of ", student);
+console.log(Object.grabValues(student));
