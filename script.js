@@ -19,5 +19,16 @@ function myIndexOf(arr, target) {
     return -1;
 }
 
-console.log("MyIndexOf() function test: ")
+console.log("myIndexOf() function test: ")
 console.log(myIndexOf(["cat", "dog", "cow"], "dog"));
+
+
+const testArray = ["boat", "car", "plane"];
+
+function myPush(arr, item) {
+  arr[arr.length] = item;
+  return arr; 
+}
+console.log("myPush() function test: ")
+console.log("Adding tank to " + testArray);
+console.log(myPush(testArray, "tank"));
