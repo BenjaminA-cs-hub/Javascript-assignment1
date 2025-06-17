@@ -29,7 +29,7 @@ const testArray = ["boat", "car", "plane"];
 
 function myPush(arr, item) {
   arr[arr.length] = item;
-  return arr; 
+  return arr.length; 
 }
 console.log("myPush() function test: ")
 console.log("Adding tank to ", testArray);
