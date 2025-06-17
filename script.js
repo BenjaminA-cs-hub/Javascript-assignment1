@@ -49,3 +49,27 @@ const numArray = [1,2,3,4,10,12];
 console.log("myLastIndexOf() function test: ")
 console.log("Finding index of 10 in " + numArray);
 console.log(myLastIndexOf(numArray, 10));
+
+// 10
+
+const student = {
+  firstname: 'John',
+  lastname: 'Doe',
+  age: 22,
+  gender: 'male'
+};
+
+
+Object.grabKeys = function(object) {
+    const keys = [];
+    let i = 0;
+    for (key in object) {
+        keys[i] = key;
+        i++;
+    }
+    return keys;
+}
+
+console.log("grabKeys() function test: ")
+console.log("Grabing keys of " + student);
+console.log(Object.grabKeys(student));
